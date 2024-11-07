@@ -470,6 +470,46 @@ header nav ul.show {
     <!--==============================
 About Us Area  
 ==============================-->
+
+<style>
+/* Maintain original container styling */
+.box-shape.spin {
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Image styling to maintain original size but responsive */
+.box-shape.spin img {
+    width: auto;               /* Keep original width */
+    height: auto;              /* Keep original height */
+    max-width: 100%;           /* Prevent overflow on larger screens */
+    object-fit: cover;         /* Fills the container without distorting */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .box-shape.spin img {
+        width: 100%;           /* Allow it to shrink down to fit smaller screens */
+        height: auto;
+        object-fit: contain;   /* Prevents cropping on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .box-shape.spin img {
+        width: 100%;           /* Full width on very small screens */
+        height: auto;
+        object-fit: contain;   /* Ensures no cropping */
+    }
+}
+
+
+
+</style>
 <div class="z-index-common space" id="about-sec">
     <div class="shape-mockup moving z-index-3" data-bottom="-40px" data-right="0"><img src="./assets/img/shape/vector_shape_3.png" alt="shape"></div>
     <div class="container">
@@ -926,8 +966,9 @@ About Us Area
         font-size: 12px;
     }
 }
-
+    
     </style>
+     <div class="calculator-container" style="margin-left: 40px;">
 
  <div class="uhs-price-container">
     <div class="uhs-price-form-container">
@@ -1005,7 +1046,7 @@ About Us Area
         <button class="uhs-price-button">Book Now</button>
     </div>
 </div>
-
+     </div>
 
 
     <!--==============================
