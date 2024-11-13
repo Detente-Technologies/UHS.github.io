@@ -765,304 +765,439 @@ About Us Area
  Cleaning Cost Calculator
  ===================================== -->
 
-    <style>
-        .uhs-price-container {
-        display: flex;
-        justify-content: space-between;
-        padding: 40px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    .uhs-price-form-container {
-        background-color: white;
-        /* border: 1px solid #ddd; */
-        padding: 20px;
-        width: 70%;
-        border-radius: 5px;
-        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-        margin-left: -80px;
-        margin-top: 20px;
-        margin-right: auto;
-    }
-    .uhs-price-category-buttons {
-        display: flex;
-        /* justify-content: space-between; */
-        margin-bottom: 20px;
-    }
-    .uhs-price-category-buttons button {
-        background-color: white;
-        border: 1px solid green;
-        padding: 10px;
-        cursor: pointer;
-        color: green;
-        font-weight: bold;
-        font-size: 16px;
-        border-radius: 0;
-        flex: 1;
-        transition: background-color 0.3s, color 0.3s;
-        width: 26%;
-        margin-bottom: 15px;
-    }
-    .uhs-price-category-buttons button:not(:first-child) {
-    border-left: 1px solid green; /* Remove the left border for all buttons except the first */
+ <style>
+    .uhs-price-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-    
-    .uhs-price-category-buttons button.active {
-        background-color: #198754;
-        color: white;
-    }
-    .uhs-price-category-buttons button:hover {
-        background-color: #198754;
-        color: white;
-    }
-    .uhs-price-form-group-inline {
-        display: flex;
-        gap: 25px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    .uhs-price-label {
-        display: block;
-        margin-bottom: 15px;
-        font-size: 18px;
-        /* font-weight: bold; */
-    }
-    .uhs-price-select{
-        width: 400px;
-        height: 45px;
-        padding: 10px ;
-        margin-bottom: 10px;
-        font-size: 16px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-sizing: border-box;
-        background-color: #f9f9f9;
-    }
-    .uhs-price-input{
-        width: 400px;
-        height: 43px;
-        padding: 10px ;
-        margin-bottom: 10px;
-        font-size: 16px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-sizing: border-box;
-        background-color: #f9f9f9;
-    }
-    .uhs-price-input::placeholder{
-        font-size: 17.5px;
-    }
-    .uhs-price-button {
-        background-color: #0f5132;
-        color: white;
-        padding: 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        width: 100%;
-        transition: background-color 0.3s;
-        margin-top: 10px;
-    }
-    .uhs-price-button:hover {
-        background-color: #004d00;
-    }
-    .uhs-price-summary-container {
-        background-color: white;
-        border: 1px solid #ddd;
-        padding: 40px;
-        width: 340px;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        text-align: center;
-        margin-left: 20px;
-    }
-    .uhs-price-summary-container h2 {
-        font-size: 23px;
-        color: #006400;
-        margin: 0 ;
-        margin-bottom: -20px;
-        text-align: center;
-    }
-    .uhs-price-summary-container h3 {
-        font-size: 50px;
-        color: #006400;
-        margin: 50px 0 ;
-        font-weight: bold;
-        text-align: center;
-    }
-    .uhs-price-summary-container p{
-        margin:25px
-    }
-    .uhs-price-span{
-        font-size: 15px;
-        color: gray;
-    }
-    .uhs-price-h1{
-        margin-bottom: 42px;
-    }
-   /* Default styles (for large screens) remain unchanged */
+.uhs-price-form-container {
+    background-color: white;
+    /* border: 1px solid #ddd; */
+    padding: 20px;
+    width: 70%;
+    border-radius: 5px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-left: -80px;
+    margin-top: 20px;
+    margin-right: auto;
+}
+.uhs-price-category-buttons {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+}
+.uhs-price-category-buttons button {
+    background-color: white;
+    border: 1px solid green;
+    padding: 10px;
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 0;
+    flex: 1;
+    transition: background-color 0.3s, color 0.3s;
+    width: 26%;
+    margin-bottom: 15px;
+}
+.uhs-price-category-buttons button:not(:first-child) {
+border-left: 1px solid green; /* Remove the left border for all buttons except the first */
+}
+
+.uhs-price-category-buttons button.active {
+    background-color: #198754;
+    color: white;
+}
+.uhs-price-category-buttons button:hover {
+    background-color: #198754;
+    color: white;
+}
+.uhs-price-form-group-inline {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.uhs-price-label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+.uhs-price-select{
+    width: 400px;
+    height: 45px;
+    padding: 10px ;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+.uhs-price-input{
+    width: 400px;
+    height: 43px;
+    padding: 10px ;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+.uhs-price-input::placeholder{
+    font-size: 17.5px;
+}
+.uhs-price-button {
+    background-color: #0f5132;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+.uhs-price-button:hover {
+    background-color: #004d00;
+}
+.uhs-price-summary-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 40px;
+    width: 340px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-left: 20px;
+}
+.uhs-price-summary-container h2 {
+    font-size: 23px;
+    color: #006400;
+    margin: 0 ;
+    margin-bottom: -20px;
+    text-align: center;
+}
+.uhs-price-summary-container h3 {
+    font-size: 50px;
+    color: #006400;
+    margin: 50px 0 ;
+    font-weight: bold;
+    text-align: center;
+}
+.uhs-price-summary-container p{
+    margin:25px
+}
+.uhs-price-span{
+    font-size: 15px;
+    color: gray;
+}
+.uhs-price-h1{
+    margin-bottom: 42px;
+}
+/* Default styles (for large screens) remain unchanged */
 
 /* Laptops (1024px and below) */
 @media (max-width: 1024px) {
-    .uhs-price-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-    .uhs-price-form-container,
-    .uhs-price-summary-container {
-        width: 90%; /* Expand to fit smaller screens */
-        margin: 10px 0; /* Space between containers */
-    }
-    .uhs-price-summary-container h3 {
-        font-size: 40px; /* Adjust font size for readability */
-    }
+.uhs-price-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.uhs-price-form-container,
+.uhs-price-summary-container {
+    width: 90%; /* Expand to fit smaller screens */
+    margin: 10px 0; /* Space between containers */
+}
+.uhs-price-summary-container h3 {
+    font-size: 40px; /* Adjust font size for readability */
+}
 }
 
 /* Tablets (768px and below) */
 @media (max-width: 768px) {
-    .uhs-price-form-container,
-    .uhs-price-summary-container {
-        width: 100%;
-    }
-    .uhs-price-category-buttons {
-        flex-direction: column;
-    }
-    .uhs-price-category-buttons button {
-        width: 100%;
-        margin-bottom: 10px; /* Spacing between buttons */
-    }
-    .uhs-price-form-group-inline {
-        flex-direction: column;
-    }
-    .uhs-price-select,
-    .uhs-price-input {
-        width: 100%; /* Full-width input fields */
-    }
-    .uhs-price-summary-container h3 {
-        font-size: 35px;
-    }
+.uhs-price-form-container,
+.uhs-price-summary-container {
+    width: 100%;
+}
+.uhs-price-category-buttons {
+    flex-direction: column;
+}
+.uhs-price-category-buttons button {
+    width: 100%;
+    margin-bottom: 10px; /* Spacing between buttons */
+}
+.uhs-price-form-group-inline {
+    flex-direction: column;
+}
+.uhs-price-select,
+.uhs-price-input {
+    width: 100%; /* Full-width input fields */
+}
+.uhs-price-summary-container h3 {
+    font-size: 35px;
+}
 }
 
 /* Mobile Phones (480px and below) */
 @media (max-width: 480px) {
-    .uhs-price-form-group-inline {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .uhs-price-select,
-    .uhs-price-input {
-        width: 100%;
-    }
-    .uhs-price-summary-container {
-        padding: 20px;
-    }
-    .uhs-price-summary-container h3 {
-        font-size: 30px;
-    }
+.uhs-price-form-group-inline {
+    flex-direction: column;
+    gap: 15px;
+}
+.uhs-price-select,
+.uhs-price-input {
+    width: 100%;
+}
+.uhs-price-summary-container {
+    padding: 20px;
+}
+.uhs-price-summary-container h3 {
+    font-size: 30px;
+}
 }
 
 /* Extra Small Mobile (320px and below) */
 @media (max-width: 320px) {
-    .uhs-price-summary-container h2 {
-        font-size: 16px;
-    }
-    .uhs-price-summary-container h3 {
-        font-size: 24px;
-    }
-    .uhs-price-summary-container p {
-        font-size: 12px;
+.uhs-price-summary-container h2 {
+    font-size: 16px;
+}
+.uhs-price-summary-container h3 {
+    font-size: 24px;
+}
+.uhs-price-summary-container p {
+    font-size: 12px;
+}
+}
+
+.specialized-cleaning-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the fields */
+}
+
+/* Style "Size of Units" and "Number of Units" containers to sit side-by-side */
+#unit-size-container,
+#unit-number-container {
+    flex: 1 1 45%; /* Take up 45% of width each with flexibility */
+    min-width: 250px; /* Prevent fields from getting too narrow */
+}
+
+/* "Service Type" container takes full width below the other two */
+#service-type-container {
+    flex: 1 1 100%;
+    min-width: 250px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #unit-size-container,
+    #unit-number-container,
+    #service-type-container {
+        flex: 1 1 100%; /* Stack fields on small screens */
     }
 }
 
+/* Align Car Type and Service Type side by side */
+#car-type-container, #car-wash-service-type-container {
+    width: 48%; /* Each takes up about half of the row */
+}
 
-    </style>
-     <div class="calculator-container" style="margin-left: 40px;">
+/* Add spacing between Car Type and Service Type */
+#car-wash-service-type-container {
+    margin-left: auto; /* Moves Service Type to the far right */
+}
 
- <div class="uhs-price-container">
-    <div class="uhs-price-form-container">
-        <h1 class="uhs-price-h1" style="font-size: 50px;">Cleaning Cost Calculator</h1>
-        <p>Select Main Category: <span class="uhs-price-span">(Select one)*</span></p>
-        <div class="uhs-price-category-buttons">
-            <button class="uhs-price-active" onclick="setActiveCategory('Regular Cleaning')">Regular Cleaning</button>
-            <button onclick="setActiveCategory('Deep Cleaning')">Deep Cleaning</button>
-            <button onclick="setActiveCategory('Specialized Cleaning')">Specialized Cleaning</button>
-            <button onclick="setActiveCategory('Car Wash')">Car Wash</button>
-        </div>
+/* Frequency field spans the full width below */
+#car-frequency-container {
+    width: 100%; /* Full width below Car Type and Service Type */
+    margin-top: 10px; /* Add spacing above Frequency */
+}
 
-        
-        
-        <div class="uhs-price-form-group-inline">
-            <div>
-                <label class="uhs-price-label" for="residency-type">Residency Type:</label>
-                <select class="uhs-price-select" id="residency-type" onchange="calculatePrice()">
-                    <option value="">Select Residency Type</option>
-                    <option value="Studio">Studio</option>
-                    <option value="1BHK">1BHK</option>
-                    <option value="1BHK + Study Room">1BHK + Study Room</option>
-                    <option value="2BHK Apartment">2BHK Apartment</option>
-                    <option value="2BHK Townhouse">2BHK Townhouse</option>
-                    <option value="3BHK Apartment">3BHK Apartment</option>
-                    <option value="3BHK Villa">3BHK Villa</option>
-                    <option value="4BHK Apartment">4BHK Apartment</option>
-                    <option value="4BHK Villa">4BHK Villa</option>
-                    <option value="5BHK Apartment">5BHK Apartment</option>
-                    <option value="5BHK Villa">5BHK Villa</option>
-                </select>
-            </div>
-            <div>
-                <label class="uhs-price-label" for="frequency">Frequency of Service:</label>
-                <select class="uhs-price-select" id="frequency" onchange="calculatePrice()">
-                    <option value="">Select Frequency</option>
-                    <option value="One Time Srvice">One Time Service (5hrs / service)</option>
-                    <option value="Once every week">Once every week (5 hrs / service)</option>
-                    <option value="2 Times a week">2 Times a week (5 hrs / service)</option>
-                    <option value="3 Times a week">3 Times a week (5 hrs / service)</option>
-                    <option value="4 Times a week">4 Times a week (5 hrs / service)</option>
-                    <option value="5 Times a week">5 Times a week (5 hrs / service)</option>
-                    <option value="6 Times a week">6 Times a week (5 hrs / service)</option>
-                </select>
-            </div>
-        </div>
 
-        
-        <div class="uhs-price-form-group" id="package-type-container">
-            <label class="uhs-price-label" for="package">Package Type:</label>
-            <select class="uhs-price-select" id="package" onchange="calculatePrice()">
-                <option value="">Select Package</option>
-                <option value="1 Month">1 Month</option>
-                <option value="3 Month">3 Month</option>
-                <option value="6 Month">6 Month</option>
-                <option value="12 Month">12 Month</option>
+
+
+
+
+
+</style>
+ <div class="calculator-container" style="margin-left: 40px;">
+
+<div class="uhs-price-container">
+<div class="uhs-price-form-container">
+    <h1 class="uhs-price-h1" style="font-size: 50px;">Cleaning Cost Calculator</h1>
+    <p>Select Main Category: <span class="uhs-price-span">(Select one)*</span></p>
+    <div class="uhs-price-category-buttons">
+        <button id="regular-cleaning" onclick="setActiveCategory('Regular Cleaning')">Regular Cleaning</button>
+        <button id="deep-cleaning" onclick="setActiveCategory('Deep Cleaning')">Deep Cleaning</button>
+        <button id="specialized-cleaning" onclick="setActiveCategory('Specialized Cleaning')">Specialized Cleaning</button>
+        <button id="car-wash" onclick="setActiveCategory('Car Wash')">Car Wash</button>
+    </div>
+  
+    <div class="uhs-price-form-group-inline">
+    
+        <div id="residency-type-container">
+            <label id="residency-type-label" class="uhs-price-label" for="residency-type">Residency Type:</label>
+            <select class="uhs-price-select" id="residency-type" onclick="updateFrequencyOptions()" onchange="calculatePrice()">
+                <option value="">Select Residency Type</option>
+                <option value="Studio">Studio</option>
+                <option value="1BHK">1BHK</option>
+                <option value="1BHK + Study Room">1BHK + Study Room</option>
+                <option value="2BHK Apartment">2BHK Apartment</option>
+                <option value="2BHK Townhouse">2BHK Townhouse</option>
+                <option value="3BHK Apartment">3BHK Apartment</option>
+                <option value="3BHK Townhouse">3BHK Townhouse</option>
+                <option value="3BHK Villa">3BHK Villa</option>
+                <option value="4BHK Apartment">4BHK Apartment</option>
+                <option value="4BHK Villa">4BHK Villa</option>
+                <option value="5BHK Apartment">5BHK Apartment</option>
+                <option value="5BHK Villa">5BHK Villa</option>
             </select>
         </div>
-        <div class="uhs-price-form-group-inline">
-            <div>
-                <label class="uhs-price-label" for="name">Name:</label>
-                <input class="uhs-price-input" type="text" id="name" placeholder="Enter your Full Name">
+
+
+        <div id="frequency-container">
+            <label id="frequency-label" class="uhs-price-label" for="frequency">Frequency of Service:</label>
+            <select class="uhs-price-select" id="frequency" onchange="calculatePrice()">
+                <option value="">Select Frequency</option>
+                <option value="One Time Service">One Time Service (45 mins / service)</option>
+                <option value="Once every week">Once every week (45 mins / service)</option>
+                <option value="2 Times a week">2 Times a week (45 mins / service)</option>
+                <option value="3 Times a week">3 Times a week (45 mins / service)</option>
+                <option value="4 Times a week">4 Times a week (45 mins / service)</option>
+                <option value="5 Times a week">5 Times a week (45 mins / service)</option>
+                <option value="6 Times a week">6 Times a week (45 mins / service)</option>
+            </select>
+        </div>
+    </div>
+
+    
+    <div class="uhs-price-form-group" id="package-type-container">
+        <label class="uhs-price-label" for="package">Package Type:</label>
+        <select class="uhs-price-select" id="package" onchange="calculatePrice()">
+            <option value="">Select Package</option>
+            <option value="1 Month">1 Month</option>
+            <option value="3 Month">3 Month</option>
+            <option value="6 Month">6 Month</option>
+            <option value="12 Month">12 Month</option>
+        </select>
+    </div>
+
+    <div class="specialized-cleaning-fields">
+
+
+    <div id="unit-size-container" class="uhs-price-form-group" style="display: none;">
+        <label class="uhs-price-label" for="unit-size">Size of Units:</label>
+        <select class="uhs-price-select" id="unit-size">
+            <option value="">Select Unit Size</option>
+            <option value="Extra Small">Extra Small</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select>
+    </div>
+    
+    <div id="unit-number-container" class="uhs-price-form-group" style="display: none; margin-left: 50px;">
+        <label class="uhs-price-label" for="unit-number">Number of Units:</label>
+        <select class="uhs-price-select" id="unit-number">
+            <option value="">Select Number of Units</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+        </select>
+    </div>
+    
+    <div id="service-type-container" class="uhs-price-form-group" style="display: none;">
+        <label class="uhs-price-label" for="service-type">Service Type:</label>
+        <select class="uhs-price-select" id="service-type">
+            <option value="">Select Service Type</option>
+            <option value="Deep Cleaning">Carpet Shampooing</option>
+            <option value="Sanitization">Sofa Cleaning</option>
+            <option value="Pest Control">Mattress Cleaning</option>
+        </select>
+    </div>
+
+    <!-- CAR WASH FIELDS  -->
+
+    <div style="display: flex; flex-direction: column; gap: 15px;">
+        <div style="display: flex; gap: 20px;">
+            <!-- Car Type Container -->
+            <div id="car-type-container" class="uhs-price-form-group" style="display: none;">
+                <label class="uhs-price-label" for="car-type">Car Type:</label>
+                <select class="uhs-price-select" id="car-type">
+                    <option value="">Select Car Type</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Couple">Couple</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Pickup">Pickup</option>
+                    <option value="Hatchbacks">Hatchbacks</option>
+                </select>
             </div>
-            <div>
-                <label class="uhs-price-label" for="email">Email:</label>
-                <input class="uhs-price-input" type="email" id="email" placeholder="Enter your Email">
+    
+            <!-- Service Type Container (Right of Car Type) -->
+            <div id="car-wash-service-type-container" class="uhs-price-form-group" style="display: none;">
+                <label class="uhs-price-label" for="car-wash-service-type">Service Type:</label>
+                <select class="uhs-price-select" id="car-wash-service-type">
+                    <option value="">Select Car Wash Service Type</option>
+                    <option value="Exterior Wash">Exterior Wash</option>
+                </select>
             </div>
+        </div>
+    
+        <!-- Frequency Container (Below Car Type and Service Type) -->
+        <div id="car-frequency-container" class="uhs-price-form-group" style="display: none;">
+            <label class="uhs-price-label" for="car-frequency">Frequency:</label>
+            <select class="uhs-price-select" id="car-frequency">
+                <option value="">Select Frequency</option>
+                <option value="One Time">One Time Service</option>
+                <option value="Weekly"> Every Week</option>
+            </select>
         </div>
     </div>
     
 
-    <div class="uhs-price-summary-container">
-        <h2>FINAL COST</h2>
-        <h3 id="final-cost">0 QAR</h3>
-        <hr>
-        <p>100% Trusted Cleaners</p>
-        <p>Over 820+ Cleaners</p>
-        <p>No Hidden Charges</p>
-        <p>Credit Cards Accepted</p>
-        <button class="uhs-price-button">Book Now</button>
+    
+</div>
+    <div class="uhs-price-form-group-inline">
+        <div>
+            <label class="uhs-price-label" for="name">Name:</label>
+            <input class="uhs-price-input" type="text" id="name" placeholder="Enter your Full Name">
+        </div>
+        <div>
+            <label class="uhs-price-label" for="email">Email:</label>
+            <input class="uhs-price-input" type="email" id="email" placeholder="Enter your Email">
+        </div>
     </div>
 </div>
-     </div>
+
+
+<div class="uhs-price-summary-container">
+    <h2>FINAL COST</h2>
+    <h3 id="final-cost">0 QAR</h3>
+    <hr>
+    <p>100% Trusted Cleaners</p>
+    <p>Over 820+ Cleaners</p>
+    <p>No Hidden Charges</p>
+    <p>Credit Cards Accepted</p>
+    <button class="uhs-price-button">Book Now</button>
+</div>
+</div>
+ </div>
 
 
 
@@ -2129,6 +2264,253 @@ Brand Area
 
     <!-- Main Js File -->
     <script src="./assets/js/main.js"></script>
+
+    <script>
+     function setActiveCategory(category) {
+    // Get all containers
+    const residencyTypeContainer = document.getElementById('residency-type-container');
+    const frequencyContainer = document.getElementById('frequency-container');
+    const packageTypeContainer = document.getElementById('package-type-container');
+    const carTypeContainer = document.getElementById('car-type-container');
+    const serviceTypeContainer = document.getElementById('service-type-container');
+    const carFrequencyContainer = document.getElementById('car-frequency-container');
+    const TypeofService = document.getElementById('car-wash-service-type-container');
+
+    // Specialized cleaning fields
+    const unitSizeContainer = document.getElementById('unit-size-container');
+    const unitNumberContainer = document.getElementById('unit-number-container');
+
+    if (category === 'Car Wash') {
+        // Hide Residency Type, Frequency of Service, and Package Type fields
+        residencyTypeContainer.style.display = 'none';
+        frequencyContainer.style.display = 'none';
+        packageTypeContainer.style.display = 'none';
+        serviceTypeContainer.style.display = 'none';
+
+        // Show Car Wash-specific fields
+        carTypeContainer.style.display = 'block';
+        TypeofService.style.display = 'block';
+        carFrequencyContainer.style.display = 'block';
+
+        // Hide Specialized Cleaning fields
+        unitSizeContainer.style.display = 'none';
+        unitNumberContainer.style.display = 'none';
+    } 
+    
+    else if (category === 'Specialized Cleaning') {
+        // Hide all fields not related to Specialized Cleaning
+        residencyTypeContainer.style.display = 'none';
+        frequencyContainer.style.display = 'none';
+        packageTypeContainer.style.display = 'none';
+        carTypeContainer.style.display = 'none';
+        carFrequencyContainer.style.display = 'none';
+        TypeofService.style.display = 'none'
+
+        // Show Specialized Cleaning-specific fields
+        serviceTypeContainer.style.display = 'block';
+        unitSizeContainer.style.display = 'block';
+        unitNumberContainer.style.display = 'block';
+    } 
+    
+    else if (category === 'Deep Cleaning') {
+        // Show Residency Type and Frequency fields but hide Package Type
+        residencyTypeContainer.style.display = 'block';
+        frequencyContainer.style.display = 'block';
+        packageTypeContainer.style.display = 'none'; // Hide Package Type for Deep Cleaning
+
+        // Hide Car Wash and Specialized Cleaning fields
+        carTypeContainer.style.display = 'none';
+        carFrequencyContainer.style.display = 'none';
+        serviceTypeContainer.style.display = 'none';
+        unitSizeContainer.style.display = 'none';
+        unitNumberContainer.style.display = 'none';
+        TypeofService.style.display = 'none'
+    } 
+    
+    else {
+        // Default case for Regular Cleaning
+        residencyTypeContainer.style.display = 'block';
+        frequencyContainer.style.display = 'block';
+        packageTypeContainer.style.display = 'block';
+
+        // Hide Car Wash and Specialized Cleaning fields
+        carTypeContainer.style.display = 'none';
+        carFrequencyContainer.style.display = 'none';
+        serviceTypeContainer.style.display = 'none';
+        unitSizeContainer.style.display = 'none';
+        unitNumberContainer.style.display = 'none';
+        TypeofService.style.display = 'none'
+    }
+}
+
+const frequencyOptions = {
+    "Studio": [
+        { value: "One Time Service", text: "One Time Service (45mins / service)" },
+        { value: "Once every week", text: "Once every week (45mins / service)" },
+        { value: "2 times a week", text: "2 times a week (45mins / service)" },
+        { value: "3 times a week", text: "3 times a week (45mins / service)" },
+        { value: "4 times a week", text: "4 times a week (45mins / service)" },
+        { value: "5 times a week", text: "5 times a week (45mins / service)" },
+        { value: "6 times a week", text: "6 times a week (45mins / service)" }
+        // Add more Studio-specific frequencies as needed
+    ],
+    "1BHK": [
+        { value: "One Time Service", text: "One Time Service (1 hr / service)" },
+        { value: "Once every week", text: "Once every week (1 hr / service)" },
+        { value: "2 times a week", text: "2 times a week (1 hr / service)" },
+        { value: "3 times a week", text: "3 times a week (1 hr / service)" },
+        { value: "4 times a week", text: "4 times a week (1 hr / service)" },
+        { value: "5 times a week", text: "5 times a week (1 hr / service)" },
+        { value: "6 times a week", text: "6 times a week (1 hr / service)" }
+        // Add more 1BHK-specific frequencies as needed
+    ],
+    "1BHK + Study Room": [
+        { value: "One Time Service", text: "One Time Service (1 hr 30 mins / service)" },
+        { value: "Once a week", text: "Once every week (1 hr 30 mins / service)" },
+        { value: "2 times a week", text: "2 times a week (1 hr 30 mins / service)" },
+        { value: "3 times a week", text: "3 times a week (1 hr 30 mins / service)" },
+        { value: "4 times a week", text: "4 times a week (1 hr 30 mins / service)" },
+        { value: "5 times a week", text: "5 times a week (1 hr 30 mins / service)" },
+        { value: "6 times a week", text: "6 times a week (1 hr 30 mins / service)" }
+    ],
+    "2BHK Apartment": [
+        { value: "One Time Service", text: "One Time Service (2 hr  / service)" },
+        { value: "Once every week", text: "Once every week (2 hr  / service)" },
+        { value: "2 times a week", text: "2 times a week (2 hr  / service)" },
+        { value: "3 times a week", text: "3 times a week (2 hr  / service)" },
+        { value: "4 times a week", text: "4 times a week (2 hr  / service)" },
+        { value: "5 times a week", text: "5 times a week (2 hr  / service)" },
+        { value: "6 times a week", text: "6 times a week (2 hr  / service)" }
+    ],
+    "2BHK Townhouse":[
+        { value: "One Time Service", text: "One Time Service (2 hr 30 mins  / service)" },
+        { value: "Once every week", text: "Once every week (2 hr 30 mins  / service)" },
+        { value: "2 times a week", text: "2 times a week (2 hr 30 mins  / service)" },
+        { value: "3 times a week", text: "3 times a week (2 hr 30 mins  / service)" },
+        { value: "4 times a week", text: "4 times a week (2 hr 30 mins  / service)" },
+        { value: "5 times a week", text: "5 times a week (2 hr 30 mins  / service)" },
+        { value: "6 times a week", text: "6 times a week (2 hr 30 mins  / service)" }
+    ],
+    "3BHK Apartment":[
+        { value: "One Time Service", text: "One Time Service (2 hr 30 mins  / service)" },
+        { value: "Once every week", text: "Once every week (2 hr 30 mins  / service)" },
+        { value: "2 times a week", text: "2 times a week (2 hr 30 mins  / service)" },
+        { value: "3 times a week", text: "3 times a week (2 hr 30 mins  / service)" },
+        { value: "4 times a week", text: "4 times a week (2 hr 30 mins  / service)" },
+        { value: "5 times a week", text: "5 times a week (2 hr 30 mins  / service)" },
+        { value: "6 times a week", text: "6 times a week (2 hr 30 mins  / service)" }
+    ],
+    "3BHK Townhouse":[
+
+        { value: "One Time Service", text: "One Time Service (3 hr  / service)" },
+        { value: "Once every week", text: "Once every week (3 hr  / service)" },
+        { value: "2 times a week", text: "2 times a week (3 hr  / service)" },
+        { value: "3 times a week", text: "3 times a week (3 hr  / service)" },
+        { value: "4 times a week", text: "4 times a week (3 hr  / service)" },
+        { value: "5 times a week", text: "5 times a week (3 hr  / service)" },
+        { value: "6 times a week", text: "6 times a week (3 hr  / service)" }
+    ],
+    "3BHK Villa":[
+        { value: "One Time Service", text: "One Time Service (3 hr 30 mins  / service)" },
+        { value: "Once every week", text: "Once every week (3 hr 30 mins  / service)" },
+        { value: "2 times a week", text: "2 times a week (3 hr 30 mins  / service)" },
+        { value: "3 times a week", text: "3 times a week (3 hr 30 mins  / service)" },
+        { value: "4 times a week", text: "4 times a week (3 hr 30 mins  / service)" },
+        { value: "5 times a week", text: "5 times a week (3 hr 30 mins  / service)" },
+        { value: "6 times a week", text: "6 times a week (3 hr 30 mins  / service)" }
+    ],
+    "4BHK Apartment":[
+        { value: "One Time Service", text: "One Time Service (3 hr 30 mins  / service)" },
+        { value: "Once every week", text: "Once every week (3 hr 30 mins  / service)" },
+        { value: "2 times a week", text: "2 times a week (3 hr 30 mins  / service)" },
+        { value: "3 times a week", text: "3 times a week (3 hr 30 mins  / service)" },
+        { value: "4 times a week", text: "4 times a week (3 hr 30 mins  / service)" },
+        { value: "5 times a week", text: "5 times a week (3 hr 30 mins  / service)" },
+        { value: "6 times a week", text: "6 times a week (3 hr 30 mins  / service)" }
+    ],
+    "4BHK Villa":[
+        { value: "One Time Service", text: "One Time Service (4 hr  / service)" },
+        { value: "Once every week", text: "Once every week (4 hr  / service)" },
+        { value: "2 times a week", text: "2 times a week (4 hr  / service)" },
+        { value: "3 times a week", text: "3 times a week (4 hr  / service)" },
+        { value: "4 times a week", text: "4 times a week (4 hr  / service)" },
+        { value: "5 times a week", text: "5 times a week (4 hr  / service)" },
+        { value: "6 times a week", text: "6 times a week (4 hr  / service)" }
+    ],
+    "5BHK Apartment":[
+        { value: "One Time Service", text: "One Time Service (5 hr  / service)" },
+        { value: "Once every week", text: "Once every week (5 hr  / service)" },
+        { value: "2 times a week", text: "2 times a week (5 hr  / service)" },
+        { value: "3 times a week", text: "3 times a week (5 hr  / service)" },
+        { value: "4 times a week", text: "4 times a week (5 hr  / service)" },
+        { value: "5 times a week", text: "5 times a week (5 hr  / service)" },
+        { value: "6 times a week", text: "6 times a week (5 hr  / service)" }  
+    ],
+    "5BHK Villa":[
+        { value: "One Time Service", text: "One Time Service (5 hr  / service)"},
+        { value: "Once every week", text: "Once every week (5 hr  / service)"},
+        { value: "2 times a week", text: "2 times a week (5 hr  / service)" },
+        { value: "3 times a week", text: "3 times a week (5 hr  / service)" },
+        { value: "4 times a week", text: "4 times a week (5 hr  / service)" },
+        { value: "5 times a week", text: "5 times a week (5 hr  / service)" },
+        { value: "6 times a week", text: "6 times a week (5 hr  / service)" }
+    ]
+    // Add other residency types as needed
+};
+
+function updateFrequencyOptions() {
+    const residencyType = document.getElementById("residency-type").value;
+    const frequencySelect = document.getElementById("frequency");
+
+    // Clear existing options
+    frequencySelect.innerHTML = "";
+
+    // Get the frequency options for the selected residency type
+    const options = frequencyOptions[residencyType] || [];
+
+    // Populate the frequency select with new options
+    options.forEach(option => {
+        const opt = document.createElement("option");
+        opt.value = option.value;
+        opt.textContent = option.text;
+        frequencySelect.appendChild(opt);
+    });
+}
+
+function calculatePrice() {
+    const category = document.getElementById('regular-cleaning').classList.contains('active');
+    const residencyType = document.getElementById('residency-type').value;
+    const frequency = document.getElementById('frequency').value;
+    const packageType = document.getElementById('package').value;
+    const finalCost = document.getElementById('final-cost');
+
+    if (residencyType === "Studio" && frequency === "One Time Service") {
+        finalCost.innerHTML = "75 QAR";
+    } 
+    else if (residencyType === "Studio" && frequency === "Once every week" && packageType === "1 Month"){
+        finalCost.innerHTML = "152 QAR";
+    }
+    else if (residencyType === "Studio" && frequency === "2 times a week" && packageType === "1 Month"){
+        finalCost.innerHTML = "288 QAR";
+    }
+    else if (residencyType === "Studio" && frequency === "3 times a week" && packageType === "1 Month"){
+        finalCost.innerHTML = "408 QAR";
+    }
+    else if (residencyType === "Studio" && frequency === "4 times a week" && packageType === "1 Month"){
+        finalCost.innerHTML = "512 QAR";
+    }
+    else if (residencyType === "Studio" && frequency === "5 times a week" && packageType === "1 Month"){
+        finalCost.innerHTML = "600 QAR";
+    }
+    else if (residencyType === "Studio" && frequency === "6 times a week" && packageType === "1 Month"){
+        finalCost.innerHTML = "552 QAR";
+    }
+    else {
+        finalCost.textContent = "0 QAR";
+    }
+}
+
+    </script>
     
 
 </body>
