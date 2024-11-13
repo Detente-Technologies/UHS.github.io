@@ -507,8 +507,6 @@ About Us Area
     }
 }
 
-
-
 </style>
 <div class="z-index-common space" id="about-sec">
     <div class="shape-mockup moving z-index-3" data-bottom="-40px" data-right="0"><img src="./assets/img/shape/vector_shape_3.png" alt="shape"></div>
@@ -533,7 +531,7 @@ About Us Area
                         </div>
                     </div>
                     <div class="box-shape spin">
-                        <img src="./assets/img/shape/vector_shape_2.png" alt="img">
+                        <!-- <img src="./assets/img/shape/vector_shape_2.png" alt="img" style="background-size: contain;"> -->
                     </div>
                 </div>
             </div>
@@ -825,12 +823,14 @@ border-left: 1px solid green; /* Remove the left border for all buttons except t
     display: block;
     margin-bottom: 15px;
     font-size: 18px;
+    color: black;
     /* font-weight: bold; */
 }
 .uhs-price-select{
     width: 400px;
     height: 45px;
     padding: 10px ;
+    color: black;
     margin-bottom: 10px;
     font-size: 16px;
     border: 1px solid #ddd;
@@ -842,6 +842,7 @@ border-left: 1px solid green; /* Remove the left border for all buttons except t
     width: 400px;
     height: 43px;
     padding: 10px ;
+    color: black;
     margin-bottom: 10px;
     font-size: 16px;
     border: 1px solid #ddd;
@@ -851,6 +852,7 @@ border-left: 1px solid green; /* Remove the left border for all buttons except t
 }
 .uhs-price-input::placeholder{
     font-size: 17.5px;
+    color: black;
 }
 .uhs-price-button {
     background-color: #0f5132;
@@ -1044,7 +1046,7 @@ border-left: 1px solid green; /* Remove the left border for all buttons except t
     <div class="uhs-price-form-group-inline">
     
         <div id="residency-type-container">
-            <label id="residency-type-label" class="uhs-price-label" for="residency-type">Residency Type:</label>
+            <label id="residency-type-label" class="uhs-price-label" for="residency-type" style="color: black;">Residency Type:</label>
             <select class="uhs-price-select" id="residency-type" onclick="updateFrequencyOptions()" onchange="calculatePrice()">
                 <option value="">Select Residency Type</option>
                 <option value="Studio">Studio</option>
