@@ -413,17 +413,128 @@ header nav ul.show {
     <!--==============================
     Breadcumb
 ============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="./assets/New-Images/office-730681.jpg">
-        <div class="container">
-            <div class="breadcumb-content">
-                <h1 class="breadcumb-title" style="margin-left: 24px;">Appointments</h1>
-                <ul class="breadcumb-menu">
-                    <li><a href="home-house-cleaner.html" style="font-size: 35px;">Home</a></li>
-                    <li style="font-size: 33px;">Appointments</li>
-                </ul>
-            </div>
+<style>
+    /* Enhanced Breadcrumb Styles */
+.breadcrumb-wrapper {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* fallback */
+    background-blend-mode: overlay;
+}
+
+.breadcrumb-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 150, 136, 0.7), rgba(0, 105, 92, 0.7));
+    z-index: 1;
+    opacity: 0.85;
+}
+
+.breadcrumb-content {
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.breadcrumb-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #e0f7fa;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 3px solid #e0f7fa; */
+}
+
+.breadcrumb-cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #068FFF;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.breadcrumb-cta-btn:hover {
+    background-color: #068FFF;
+    transform: scale(1.05);
+}
+
+.breadcrumb-menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+    color: #f0f0f0;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.breadcrumb-menu li {
+    position: relative;
+    color: #e0e0e0;
+}
+
+.breadcrumb-menu li:not(:last-child)::after {
+    content: ">";
+    margin: 0 8px;
+    color: #fff;
+}
+
+.breadcrumb-menu li a {
+    color: #e0f7fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-menu li a:hover {
+    color: #ffffff;
+}
+
+</style>
+<div class="breadcrumb-wrapper" style="background-image: url('./assets/New-Images/office-730681.jpg');">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <h1 class="breadcrumb-title">Appointments</h1>
+            <p class="breadcrumb-subtitle">Schedule an appointment with us and receive a prompt, personalized response. Connect with our team today to get the answers and support you need—quickly and efficiently!</p>
+            <a href="#appointment-form" class="breadcrumb-cta-btn">Book Now</a>
+            <!-- <ul class="breadcrumb-menu">
+                <li><a href="home-house-cleaner.html">Home</a></li>
+                <li>Appointments</li>
+            </ul> -->
         </div>
     </div>
+</div>
+
+<!-- =================================
+    Text Area
+======================================-->
+  
+    <h3 style="text-align:center;margin-top: 20px;">Make an Appointment and get quick response</h3>
+    <p style="text-align: center;color: black;font-size: 18px;">Book an appointment with us to get expert guidance tailored to your needs. Our team is here to help, offering you dedicated time and attention to address your questions and provide solutions. Simply select a time that works best for you, and we’ll make sure you’re supported every step of the way. Get started today to secure your spot and experience the difference of working with professionals who care about your success!</p>
+
     <!--==============================
 Appointment Area   
 ==============================-->
@@ -604,7 +715,7 @@ Appointment Area
         </div> -->
         <div class="copyright-wrap">
             <div class="container text-center">
-                <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a href="home-house-cleaner.html">Klano</a>. All Rights Reserved.</p>
+                <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a href="home-house-cleaner.html">UHS</a>. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
