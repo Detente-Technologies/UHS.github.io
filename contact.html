@@ -14,20 +14,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/New-Images/logo.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/New-Images/logo.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/New-Images/logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/New-Images/logo.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/New-Images/logo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/New-Images/logo.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/New-Images/logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/New-Images/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/New-Images/logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/New-Images/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/New-Images/logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/New-Images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/New-Images/logo.png">
+    <link rel="manifest" href="./assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -399,103 +400,492 @@ header nav ul.show {
 
             <header class="new-header">
                 <div>
-                    <img src="./assets/New-Images/logo.png" alt="Logo" id="new-logo" style="width: 70px; margin-bottom: -10px;margin-top: -6px;">
+                    <a href="./index.html"><img src="./assets/New-Images/logo.png" alt="Logo" id="new-logo" style="width: 70px; margin-bottom: -10px;margin-top: -6px;"></a>
                 </div>
                 <nav>
                     <ul style="margin-bottom: -2px ;">
-                        <li><a class="heading-bar" href="#">Home</a></li>
+                        <li><a class="heading-bar" href="./index.html">Home</a></li>
                         <li><a class="heading-bar" href="#">Register as a Professional</a></li>
-                        <li><a class="heading-bar" href="#">Services</a></li>
-                        <li><a class="heading-bar" href="#">Contact Us</a></li>
+                        <li><a class="heading-bar" href="./about.html">About Us</a></li>
+                        <li><a class="heading-bar" href="./service.html">Services</a></li>
+                        <li><a class="heading-bar" href="./contact.html">Contact Us</a></li>
                     </ul>
                 </nav>
             </header>
     <!--==============================
     Breadcumb
 ============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="assets/img/bg/breadcumb-bg.jpg">
-        <div class="container">
-            <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Contact Us</h1>
-                <ul class="breadcumb-menu">
-                    <li><a href="home-house-cleaner.html">Home</a></li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-        </div>
+   <!-- Simplified Breadcrumb Area -->
+<div class="enhanced-breadcrumb" style="position: relative; height: 250px; background: linear-gradient(135deg, #007bff, #0056b3); display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+    <div class="content">
+        <h1 class="title">Contact Us</h1>
+        <p class="subtitle">Got a question? We're here to help! Use the form below to contact our team, and we’ll get back to you as soon as possible.</p>
+        <!-- <ul class="breadcrumb-nav">
+            <li><a href="home-house-cleaner.html">Home</a></li>
+            <li>/</li>
+            <li>Contact Us</li>
+        </ul> -->
+        <a href="#contactForm" class="th-btn">Reach Out Now</a>
     </div>
+</div>
+
+<!-- Updated Styling for the Breadcrumb -->
+<style>
+.enhanced-breadcrumb {
+    position: relative;
+    height: 250px;
+    background: linear-gradient(135deg, #068FFF 0%, #0047AB 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow:1px 1px 5px rgba(0, 0, 0, 0.5); ;
+}
+
+.enhanced-breadcrumb .content {
+    text-align: center;
+}
+
+.enhanced-breadcrumb .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.enhanced-breadcrumb .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.enhanced-breadcrumb .breadcrumb-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    position: relative;
+    transition:color 0.3s ease, transform 0.3s ease;;
+}
+
+.enhanced-breadcrumb .breadcrumb-nav li {
+    color: #ffffff;
+}
+
+.enhanced-breadcrumb .breadcrumb-nav li a {
+    color: #ffd700; /* Light contrast link */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.enhanced-breadcrumb .breadcrumb-nav li a:hover {
+    text-decoration: underline;
+    color: #ffc107;
+    transform: translateY(-2px);
+}
+
+.enhanced-breadcrumb .btn-primary {
+    background-color: #20C997; /* Yellow button for contrast */
+    color: #000;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.enhanced-breadcrumb .btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+    .enhanced-breadcrumb {
+        height: 220px; /* Slightly smaller height for tablets */
+    }
+
+    .enhanced-breadcrumb .title {
+        font-size: 2rem; /* Reduce title size */
+    }
+
+    .enhanced-breadcrumb .subtitle {
+        font-size: 0.9rem; /* Slightly smaller subtitle */
+    }
+
+    .enhanced-breadcrumb .btn-primary {
+        font-size: 0.9rem; /* Adjust button size */
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile Landscape (576px to 767px) */
+@media (max-width: 767px) {
+    .enhanced-breadcrumb {
+        height: 200px; /* Compact height for mobile landscape */
+        padding: 10px;
+    }
+
+    .enhanced-breadcrumb .title {
+        font-size: 1.8rem; /* Smaller title */
+    }
+
+    .enhanced-breadcrumb .subtitle {
+        font-size: 0.85rem;
+    }
+
+    .enhanced-breadcrumb .breadcrumb-nav {
+        font-size: 0.8rem;
+    }
+
+    .enhanced-breadcrumb .btn-primary {
+        font-size: 0.85rem;
+        padding: 8px 14px;
+    }
+}
+
+/* Mobile Portrait (up to 575px) */
+@media (max-width: 575px) {
+    .enhanced-breadcrumb {
+        height: 180px; /* Compact height for small devices */
+        padding: 10px;
+    }
+
+    .enhanced-breadcrumb .title {
+        font-size: 1.5rem; /* Adjust for smaller screens */
+    }
+
+    .enhanced-breadcrumb .subtitle {
+        font-size: 0.8rem; /* Smaller subtitle */
+    }
+
+    .enhanced-breadcrumb .breadcrumb-nav {
+        font-size: 0.75rem;
+        gap: 3px; /* Reduce space between breadcrumb links */
+    }
+
+    .enhanced-breadcrumb .btn-primary {
+        font-size: 0.8rem;
+        padding: 6px 12px; /* Smaller button */
+    }
+}
+</style>
+
     <!--==============================
 Contact Info Area  
 ==============================-->
-    <div class="space">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-md-7">
-                    <div class="title-area text-center">
-                        <h2 class="sec-title">Contact Information</h2>
-                        <p class="sec-text">Cleaning services are typically certified by regulatory bodies to ensure they meet specific cleanliness and hygiene standards.</p>
-                    </div>
+    <style>
+        /* Contact Info Section Styles */
+.contact-info {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #777;
+}
+
+.contact-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card .icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-text a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+@media (max-width: 767px) {
+    .contact-card {
+        margin-bottom: 20px;
+    }
+}
+
+    </style>
+<div class="contact-info">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2 class="section-heading">Contact Information</h2>
+            <p class="section-description">Cleaning services accredited by regulatory bodies to guarantee the highest hygiene and quality standards</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="contact-card">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <h3 class="card-title">Our Address</h3>
+                    <p class="card-text">8502 Preston Rd. Inglewood, Maine 98380</p>
                 </div>
             </div>
-            <div class="row gy-4 justify-content-center">
-                <div class="col-xxl-3 col-lg-4 col-md-6">
-                    <div class="contact-feature">
-                        <div class="box-icon">
-                            <i class="fa-light fa-location-dot"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="box-title">Our Address</h3>
-                            <p class="box-text">8502 Preston Rd. Ingle wood, Maine 98380</p>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="contact-card">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <h3 class="card-title">Phone Number</h3>
+                    <p class="card-text">
+                        <a href="tel:+16326543654">+(163)-2654-3654</a> <br>
+                        <a href="tel:+16326545566">+(163)-2654-5566</a>
+                    </p>
                 </div>
-                <div class="col-xxl-3 col-lg-4 col-md-6">
-                    <div class="contact-feature">
-                        <div class="box-icon bg-theme2">
-                            <i class="fa-light fa-phone"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="box-title">Phone Number</h3>
-                            <p class="box-text">
-                                <a href="tel:+16326543654">+(163)-2654-3654</a>
-                                <a href="tel:+16326545566">+(163)-2654-5566</a>
-                            </p>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    <h3 class="card-title">Email Address</h3>
+                    <p class="card-text">
+                        <a href="mailto:klanohelp@gmail.com">uhshelp@gmail.com</a>
+                        <a href="mailto:info@klano.com">info@uhs.com</a>
+                    </p>
                 </div>
-                <div class="col-xxl-3 col-lg-4 col-md-6">
-                    <div class="contact-feature">
-                        <div class="box-icon bg-title">
-                            <i class="fa-light fa-envelope"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="box-title">Email Address</h3>
-                            <p class="box-text">
-                                <a href="mailto:klanohelp@gmail.com">uhshelp@gmail.com</a>
-                                <a href="mailto:info@klano.com">info@uhs.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-lg-4 col-md-6">
-                    <div class="contact-feature">
-                        <div class="media-body">
-                            <h3 class="box-title">Follow Social Media</h3>
-                            <div class="th-social">
-                                <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
-                                <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                                <a target="_blank" href="https://pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="contact-card">
+                    <h3 class="card-title">Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://pinterest.com/" target="_blank" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!--==============================
+    </div>
+</div>
+
+<!-- Service Highlights Section -->
+<div class="service-highlights py-5">
+    <div class="container">
+        <div class="section-title text-center mb-5">
+            <h2 class="section-heading">Our Services</h2>
+            <p class="section-description">Committed to unmatched quality, we provide personalized cleaning solutions designed to meet your unique needs with precision and care.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center">
+                    <i class="fa-solid fa-broom icon"></i>
+                    <h3 class="service-title">Regular Cleaning</h3>
+                    <p class="service-description">Routine cleaning services to keep your spaces neat,clean and organized.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center">
+                    <i class="fa-solid fa-spray-can-sparkles icon"></i>
+                    <h3 class="service-title">Deep Cleaning</h3>
+                    <p class="service-description">Thorough cleaning solutions for hard-to-reach areas and tough stains.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center">
+                    <i class="fa-solid fa-shield-virus icon"></i>
+                    <h3 class="service-title">Specialized Cleaning</h3>
+                    <p class="service-description">Customized cleaning for specific needs, including sanitization and more.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center">
+                    <i class="fa-solid fa-car icon"></i>
+                    <h3 class="service-title">Car Wash</h3>
+                    <p class="service-description">Professional car washing and detailing for a spotless finish and beautiful look.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* Service Highlights Section */
+.service-highlights {
+    background-color: #f4f7fa; /* Light gray background */
+    padding: 60px 0;
+}
+
+.service-card {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .icon {
+    font-size: 40px; /* Icon size */
+    color: #0072ff; /* Icon color */
+    margin-bottom: 15px;
+}
+
+.service-card .service-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-card .service-description {
+    font-size: 14px;
+    color: #555;
+}
+
+</style>
+
+     <!--==============================
 Contact Area  
 ==============================-->
+<style>
+    .form-group {
+    margin-bottom: 20px; /* Add more space between fields */
+}
+
+.form-control {
+    padding: 12px; /* More padding for easier typing */
+    font-size: 16px; /* Increase font size for readability */
+}
+.form-group i {
+    font-size: 20px; /* Increase icon size */
+    margin-right: 10px; /* Space between icon and text */
+    color: #333; /* Set color for better visibility */
+}
+.th-btn {
+    background: linear-gradient(45deg, #00c6ff, #0072ff); /* Gradient background */
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.th-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.contact-feature {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light background for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+    margin-bottom: 20px;
+}
+
+.contact-feature .box-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-feature .box-text {
+    font-size: 14px;
+    color: #555;
+}
+.th-social a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.th-social a:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    color: #0072ff; /* Change color on hover */
+}
+.contact-area {
+    background-color: #f4f7fa; /* Light grayish background */
+    padding: 60px 0;
+}
+@media (max-width: 768px) {
+    .contact-feature {
+        width: 100%; /* Ensure contact features take full width on small screens */
+        margin-bottom: 20px; /* Space out items */
+    }
+
+    .form-group {
+        width: 100%;
+    }
+    
+    .th-social {
+        text-align: center; /* Center social icons */
+    }
+}
+.form-control:focus {
+    border-color: #0072ff; /* Highlight the field with blue when focused */
+    box-shadow: 0 0 5px rgba(0, 114, 255, 0.5); /* Add a soft glow around the input */
+}
+.contact-map iframe {
+    width: 100%;
+    max-width: 100%; /* Ensure full width on smaller screens */
+    height: 400px; /* Set a fixed height for better design */
+    border: none;
+}
+
+</style>
     <div class="space-bottom">
         <div class="container">
             <form action="mail.php" method="POST" class="team-contact-form input-white ajax-contact">
@@ -534,132 +924,30 @@ Contact Area
                 <p class="form-messages mb-0 mt-3"></p>
             </form>
         </div>
-    </div><!--==============================
+    </div>
+
+
+    <!--==============================
 Map Area  
 ==============================-->
-    <div class="">
+<div class="location-info text-center mb-4">
+    <!-- Adding the location pin icon next to the title -->
+    <h3><i class="fas fa-map-marker-alt"></i> Find Us Here</h3>
+    <!-- Adding a globe icon before the paragraph to emphasize the location -->
+    <p style="font-size: 18px;"> Here is our exact location on the map. We are conveniently located in Qatar, ready to serve you!</p>
+</div>
+
+
+        <div class="">
         <div class="contact-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.7310056272386!2d89.2286059153658!3d24.00527418490799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b97badc6151%3A0x30b048c9fb2129bc!2sAngfuztheme!5e0!3m2!1sen!2sbd!4v1651028958211!5m2!1sen!2sbd" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
+
     <!--==============================
 	Footer Area
 ==============================-->
-    <!-- <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/footer_bg_1.jpg">
-        <div class="shape-mockup movingX d-none d-xl-block" data-bottom="80px" data-left="0%"><img src="assets/img/shape/footer_shape_1.png" alt="shape"></div>
-        <div class="shape-mockup moving d-none d-xl-block" data-bottom="80px" data-right="5%"><img src="assets/img/shape/footer_shape_2.png" alt="shape"></div>
-        <div class="container">
-            <div class="footer-top-wrap">
-                <div class="row gy-4 justify-content-between">
-                    <div class="col-auto">
-                        <div class="footer-contact">
-                            <div class="box-icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title">Address</h3>
-                                <p class="box-text">554 Gloriana road Santa Rosa 95304, United States</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="footer-contact">
-                            <div class="box-icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title">Address</h3>
-                                <p class="box-text">
-                                    <a href="mailto:">klanohelp@gmail.com</a>
-                                    <a href="tel:+16102458976">+16102458976</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="footer-contact">
-                            <div class="box-icon">
-                                <i class="fa-solid fa-clock"></i>
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title">Address</h3>
-                                <p class="box-text">Mon-Fri : 09.00 am-05.00 pm <br> Sunday Closed</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="widget-area">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget footer-widget">
-                            <div class="th-widget-about">
-                                <div class="about-logo">
-                                    <a href="home-house-cleaner.html"><img src="assets/img/logo-footer.svg" alt="Klano"></a>
-                                </div>
-                                <p class="about-text">We're your trusted a cleaning company, dedicated to any kind of a consistently delivering exceptional all category good cleaning service.</p>
-                                <div class="th-social">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Quick Links</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="about.html">Terms of Use</a></li>
-                                    <li><a href="service.html">Our Services</a></li>
-                                    <li><a href="faq.html">Help & FAQs</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Our Services</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="service-details.html">Home Cleaning</a></li>
-                                    <li><a href="service-details.html">Office Cleaning</a></li>
-                                    <li><a href="service-details.html">Kitchen Cleaning</a></li>
-                                    <li><a href="service-details.html">Window Cleaning</a></li>
-                                    <li><a href="service-details.html">Bathroom Cleaning</a></li>
-                                    <li><a href="service-details.html">Wall Cleaning</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget footer-widget">
-                            <h3 class="widget_title">Subscribe Now </h3>
-                            <div class="newsletter-widget">
-                                <p class="footer-text">Subscribe Our Newsletter to get our latest update & news</p>
-                                <form action="#" class="newsletter-form">
-                                    <div class="form-group">
-                                        <input class="form-control" type="email" placeholder="Enter Email" required="">
-                                    </div>
-                                    <button type="submit" class="simple-icon"><i class="fa-solid fa-paper-plane"></i></button>
-                                </form>
-                                <div class="form-group">
-                                    <input type="checkbox" id="checkbox" name="checkbox">
-                                    <label for="checkbox">I agree with the terms & conditions</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+
         <div class="copyright-wrap">
             <div class="container text-center">
                 <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a href="home-house-cleaner.html">Uhs</a>. All Rights Reserved.</p>
